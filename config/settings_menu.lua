@@ -2,7 +2,7 @@ local InfoMessage = require("ui/widget/infomessage")
 local UIManager = require("ui/uimanager")
 local _ = require("gettext")
 local T = require("ffi/util").template
-local Version = require("opds_plus_version")
+local Version = require("opds_plus_plus_version")
 
 local SettingsMenu = {}
 
