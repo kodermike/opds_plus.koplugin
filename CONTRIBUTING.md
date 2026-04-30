@@ -1,10 +1,10 @@
 # Contributing to OPDS++
 
-First off, thank you for considering contributing to OPDS++! It's people like you that make OPDS++ such a great tool for the KOReader community.
+First off, thank you for considering contributing to OPDS++! Because this is a fork of a fork, you may be interested in contributing to the parent project, [OPDS Plus](https://github.com/greywolf1499/opds_plus.koplugin/) instead. @greywolf1499's project remains the more stable version. If you're still interested in contributing here, thank you - its your contributions that help make this tool work.
 
 ## Table of Contents
 
-- [Contributing to OPDS++](#contributing-to-opds-plus)
+- [Contributing to OPDS++](#contributing-to-opds-plus-plus)
   - [Table of Contents](#table-of-contents)
   - [Code of Conduct](#code-of-conduct)
   - [How Can I Contribute?](#how-can-i-contribute)
@@ -83,7 +83,7 @@ Unsure where to begin? Look for issues labeled:
 1. Ensure your code follows the [Lua style guidelines](#lua-code-style)
 2. Update the README.md with details of changes if applicable
 3. Update the CHANGELOG.md following the existing format
-4. Increment version numbers in `opds_plus_version.lua` and `_meta.lua` if appropriate
+4. Increment version numbers in `opds_plus_plus_version.lua` and `_meta.lua` if appropriate
 5. Your PR will be reviewed by maintainers
 6. Address any requested changes
 7. Once approved, your PR will be merged
@@ -193,8 +193,8 @@ Closes #42
 1. **Clone your fork:**
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/opds_plus.koplugin.git
-   cd opds_plus.koplugin
+   git clone https://github.com/YOUR_USERNAME/opds_plus_plus.koplugin.git
+   cd opds_plus_plus.koplugin
    ```
 
 2. **Create a development branch:**
@@ -207,10 +207,10 @@ Closes #42
 
    ```bash
    # Linux example
-   ln -s $(pwd) ~/.config/koreader/plugins/opds_plus.koplugin
+   ln -s $(pwd) ~/.config/koreader/plugins/opds_plus_plus.koplugin
 
    # Or copy the directory
-   cp -r . ~/.config/koreader/plugins/opds_plus.koplugin
+   cp -r . ~/.config/koreader/plugins/opds_plus_plus.koplugin
    ```
 
 4. **Enable Debug Mode:**
@@ -226,7 +226,7 @@ Closes #42
 ### File Structure Understanding
 
 ```
-opds_plus.koplugin/
+opds_plus_plus.koplugin/
 ├── _meta.lua                 # Plugin metadata (name, version, description)
 ├── main.lua                  # Plugin initialization, settings UI, main entry point
 ├── opdsbrowserplus.lua       # Catalog browser logic, OPDS feed handling
@@ -238,7 +238,7 @@ opds_plus.koplugin/
 ├── image_loader.lua          # Cover image downloading and caching
 ├── url_content.lua           # HTTP network operations
 ├── debug_helper.lua          # Debug logging utilities
-└── opds_plus_version.lua     # Version number (single source of truth)
+└── opds_plus_plus_version.lua     # Version number (single source of truth)
 ```
 
 ### Key Components
@@ -277,12 +277,14 @@ Test with different OPDS catalogs:
 - Project Gutenberg (large catalog)
 - Standard Ebooks (high-quality covers)
 - Your local Calibre library (if available)
+- COPS catalog (if available)
 - Custom catalog with authentication
 
 ### Device Testing
 
 If possible, test on:
 
+- Emulator ([see KOReader documentation for building the emualtor](https://github.com/koreader/koreader/blob/master/doc/Building.md))
 - E-ink device (Kindle, Kobo)
 - Android device
 - Desktop (Linux/Windows/macOS)

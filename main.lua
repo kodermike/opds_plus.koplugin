@@ -41,7 +41,7 @@ function OPDS:init()
   settings_manager:initializeDefaults()
 
   if settings_manager.is_first_run then
-    self.updated = true -- first run, force flush
+    self.updated = true     -- first run, force flush
   end
 
   -- Initialize state manager singleton
@@ -93,7 +93,7 @@ function OPDS:getAvailableFonts()
 
   -- Scan font directories for available fonts
   local font_dirs = {
-    "./fonts", -- KOReader's font directory
+    "./fonts",     -- KOReader's font directory
   }
 
   -- Add user's font directory if it exists
@@ -173,7 +173,7 @@ end
 
 function OPDS:onDispatcherRegisterActions()
   Dispatcher:registerAction("opdsplus_show_catalog",
-    { category = "none", event = "ShowOPDSPlusCatalog", title = _("OPDS++ Catalog"), filemanager = true, }
+    { category = "none", event = "ShowOPDSPlusCatalog", title = _("OPDS++"), filemanager = true, }
   )
 
   Dispatcher:registerAction("opdsplus_sync_all",
@@ -195,7 +195,7 @@ function OPDS:_createBrowserInstance()
     downloads = self.downloads,
     settings = self.settings,
     pending_syncs = self.pending_syncs,
-    title = _("OPDS++ Catalog"),
+    title = _("OPDS++"),
     is_popout = false,
     is_borderless = true,
     title_bar_fm_style = true,

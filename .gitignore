@@ -9,6 +9,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+.zed/
+Notes/
 
 # Packaging artifacts
 opds_plus.koplugin.zip
