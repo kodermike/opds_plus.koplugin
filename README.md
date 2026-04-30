@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/greywolf1499/opds_plus.koplugin?style=for-the-badge&color=orange)
-![GitHub all releases](https://img.shields.io/github/downloads/greywolf1499/opds_plus.koplugin/total?style=for-the-badge&color=yellow)
-![GitHub](https://img.shields.io/github/license/greywolf1499/opds_plus.koplugin?style=for-the-badge&color=blue)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kodermike/opd_plus_plus.koplugin?style=for-the-badge&color=orange)
+![GitHub all releases](https://img.shields.io/github/downloads/kodermike/opds_plus_plus.koplugin/total?style=for-the-badge&color=yellow)
+![GitHub](https://img.shields.io/github/license/kodermike/opds_plus_plus.koplugin?style=for-the-badge&color=blue)
 ![Platform](https://img.shields.io/badge/Platform-KOReader-success?style=for-the-badge&logo=koreader)
 
 </div>
@@ -312,7 +312,7 @@ Contributions are welcome! Here's how you can help:
 ## 🙏 Credits
 
 - **Original OPDS Plugin**: KOReader development team
-- **Enhancement Development**: greywolf1499
+- **Original OPDS Plus Development**: greywolf1499
 - Built upon the excellent [KOReader](https://github.com/koreader/koreader) e-reader software
 
 ## 📜 License
@@ -323,7 +323,7 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 📞 Support
 
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/greywolf1499/opds_plus.koplugin/issues)
+- **Issues & Bug Reports**: [GitHub Issues](https://github.com/kodermike/opds_plus_plus.koplugin/issues)
 - **KOReader Documentation**: [KOReader Wiki](https://github.com/koreader/koreader/wiki)
 - **OPDS Specification**: [OPDS Spec](https://specs.opds.io/)
 
