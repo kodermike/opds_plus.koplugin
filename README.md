@@ -13,9 +13,9 @@
 
 **Version:** 1.3.0
 
-**OPDS++** is a fork of the great OPDS plugin, OPDS Plus. So why the fork? There are features and changes I wanted that were either out of scope for the original project, or just too particular to my own use cases. I'm posting this as a public repo in case anyone else has a similar need.
+**OPDS++** is a fork of the great OPDS plugin fork, [OPDS Plus](https://github.com/greywolf1499/opds_plus.koplugin/). So why the fork? There are features and changes I wanted that were either out of scope for the original project, or just too particular to my own use cases. I'm posting this as a public repo in case anyone else has a similar need.
 
-The original OPDS Plus is a feature-rich enhancement of KOReader's built-in OPDS catalog browser, providing visual book cover displays, multiple viewing modes, and extensive customization options for browsing online book catalogs. This
+The original [OPDS Plus](https://github.com/greywolf1499/opds_plus.koplugin/) is a feature-rich enhancement of KOReader's built-in OPDS catalog browser, providing visual book cover displays, multiple viewing modes, and extensive customization options for browsing online book catalogs. This fork tweaks it a little, adding a gesture for downloading updates from sync'd catalogs, changing how catalog syncs work, as well as a few visual changes.
 
 ## ✨ Features
 
@@ -129,8 +129,8 @@ git clone https://github.com/greywolf1499/opds_plus.koplugin.git
 
 ### Accessing OPDS++
 
-1. Open KOReader's Search Bar (🔎)
-2. Tap the **menu icon** (⋮ or ≡)
+1. Open KOReader's **File Browser**
+2. Tap the **Search icon** (🔎)
 3. Select **OPDS++**
 
 ### Browsing Catalogs
@@ -245,10 +245,10 @@ Access settings from: **OPDS++ → Settings**
 ### File Structure
 
 ```
-opds_plus.koplugin/
+opds_plus_plus.koplugin/
 ├── _meta.lua
 ├── main.lua
-├── opds_plus_version.lua
+├── opds_plus_plus_version.lua
 ├── config/
 │   ├── settings.lua
 │   └── settings_menu.lua
@@ -331,7 +331,7 @@ Contributions are welcome! Here's how you can help:
 ## 🙏 Credits
 
 - **Original OPDS Plugin**: KOReader development team
-- **Original OPDS Plus Development**: greywolf1499
+- **Original [OPDS Plus](https://github.com/greywolf1499/opds_plus.koplugin/) Development**: greywolf1499
 - Built upon the excellent [KOReader](https://github.com/koreader/koreader) e-reader software
 
 ## 📜 License
