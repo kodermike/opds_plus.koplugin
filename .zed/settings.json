@@ -1,0 +1,8 @@
+{
+  "show_completion_documentation": false,
+  "indent_guides": {
+    "background_coloring": "disabled"
+  },
+  "soft_wrap": "editor_width",
+  "tab_size": 2
+}

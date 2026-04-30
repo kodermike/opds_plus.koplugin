@@ -183,14 +183,8 @@ function NavigationHandler.genItemTableFromCatalog(catalog, item_url, browser_co
 				debug_callback("Book entry with cover:", title)
 			end
 
-			local DataStorage = require("datastorage")
-			local opds_settings_file = DataStorage:getSettingsDir() .. "/opdsplus.lua"
-			local Settings = require("config.settings")
-			local settings_manager = Settings:new(opds_settings_file)
-			local opds_settings = settings_manager.storage
-
-			-- Prefer thumbnail over full image for performance unless told otherwise
-			if opds_settings:readSetting("large_cover") and item.image then
+			-- Prefer larger images only when explicitly enabled.
+			if browser_context.prefer_large_covers and item.image then
 				item.cover_url = item.image
 				item.lazy_load_cover = true
 			elseif item.thumbnail then

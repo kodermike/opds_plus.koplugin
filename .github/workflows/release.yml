@@ -14,17 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          path: 'opds_plus.koplugin'
 
       - name: Create zip archive
         run: |
-          zip -r opds_plus.koplugin.zip . \
-            -x '.git/*' \
-            -x '.github/*' \
-            -x '*.zip'
+          zip -r opds_plus.koplugin.zip opds_plus.koplugin \
+            -x '**/.git/*' \
+            -x '**/.github/*' \
+            -x '**/*.zip'
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: opds_plus.koplugin
           path: opds_plus.koplugin.zip
@@ -34,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: opds_plus.koplugin
 
